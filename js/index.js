@@ -69,7 +69,7 @@ $(document).ready(function () {
 	}
 	$dotletter.click(function(){
 		bannerstop()
-		$banner.css("background",'#000 url("../images/index/banner_bg.png")no-repeat center')	
+		$banner.css("background",'#000 url("../images/index/img_bg.png")no-repeat center')	
 		$Triones.css("display",'none')
 		$Trionesbtn.css("display",'none')
 		$Trionesbtnbtn.css("display",'none')
@@ -83,7 +83,7 @@ $(document).ready(function () {
 	});
 	$dotTriones.click(function(){
 		bannerstop()
-		$banner.css("background",'#000 url("../images/index/节点地图.png")no-repeat center')
+		$banner.css("background",'#000 url("../images/index/img_bg.png")no-repeat center')
 		$letter.css("display",'none')
 		$letterbtn.css("display",'none')
 		$letterbtnbtn.css("display",'none')
@@ -97,7 +97,7 @@ $(document).ready(function () {
 	});
 	function changeBanner(){
 		if(flag){
-			$banner.css("background",'#000 url("../images/index/banner_bg.png")no-repeat center')	
+			$banner.css("background",'#000 url("../images/index/img_bg.png")no-repeat center')	
 			$Triones.css("display",'none')
 			$Trionesbtn.css("display",'none')
 			$Trionesbtnbtn.css("display",'none')
@@ -107,7 +107,7 @@ $(document).ready(function () {
 			$dotletter.css("background-color","#32a4be")
 			$dotTriones.css("background-color","white")
 		}else{
-			$banner.css("background",'#000 url("../images/index/节点地图.png")no-repeat center')
+			$banner.css("background",'#000 url("../images/index/img_bg.png")no-repeat center')
 			$letter.css("display",'none')
 			$letterbtn.css("display",'none')
 			$letterbtnbtn.css("display",'none')
@@ -194,52 +194,5 @@ $(document).ready(function () {
         }
         return null;
     }
-/* 	$("#d14T").hover(function(){
-		$("#d14D").css("display","block");
-		},function(){
-		$("#d14D").css("display","none");
-	});
-	$("#d16T").hover(function(){
-		$("#d16D").css("display","block");
-		},function(){
-		$("#d16D").css("display","none");
-	});
-	$("#d18T").hover(function(){
-		$("#d18D").css("display","block");
-		},function(){
-		$("#d18D").css("display","none");
-	});
-
-	$("#d21T").hover(function(){
-		$("#d21D").css("display","block");
-		},function(){
-		$("#d21D").css("display","none");
-	});
-	$("#d34T").hover(function(){
-		$("#d34D").css("display","block");
-		},function(){
-		$("#d34D").css("display","none");
-	});
-	$("#d36T").hover(function(){
-		$("#d36D").css("display","block");
-		},function(){
-		$("#d36D").css("display","none");
-	});
-
-	$("#d39T").hover(function(){
-		$("#d39D").css("display","block");
-		},function(){
-		$("#d39D").css("display","none");
-	});
-	$("#d41T").hover(function(){
-		$("#d41D").css("display","block");
-		},function(){
-		$("#d41D").css("display","none");
-	});
-	$("#d43T").hover(function(){
-		$("#d43D").css("display","block");
-		},function(){
-		$("#d43D").css("display","none");
-	}); */
 
 });

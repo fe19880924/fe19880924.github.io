@@ -28,36 +28,14 @@
     <div class="content">
         <a href="/" class="logo"><img src="./images/index_logo_03.png" alt="logo"></a>
         <ul class="menu">
-            <li><a href="/" ng-bind="language.d1"></a></li>
-            <li><a href="/documents" ng-bind="language.d2"></a></li>
-            <li><a href="{{language.d100}}" ng-bind="language.d3"></a></li>
-            <li><a href="{{language.d1001}}" ng-bind="language.d3001"></a></li>
-            <li class="active"><a href="javascript:" ng-bind="language.d4"></a>
-                <ul class="two">
-                    <li><a href="{{language.d102}}" ng-bind="language.d5"></a></li>
-                    <!--<li><a href="http://info.ont.io/event" ng-bind="language.d6"></a></li>-->
-                    <li><a href="{{language.d101}}" ng-bind="language.d7"></a></li>
-                    <li><a href="{{language.d103}}" ng-bind="language.d9"></a></li>
-                    <li><a href="/about" ng-bind="language.d8"></a></li>
-                    <div class="arrow_down"></div>
-                </ul>
-            </li>
-            <li class="last_menu" ><a href="javascript:" ></a><span ng-bind="language.dlang" ></span>
-                <ul class="one">
-                    <li><a href="javascript:" ng-click="lang('en')"class="nokoreanlang">English</a></li>
-                    <li><a href="javascript:" ng-click="lang('cn')"class="nokoreanlang">中文</a></li>
-                    <li><a href="javascript:" ng-click="lang('ko')" class="koreanlang">한국어</a></li>
-                    <li><a href="javascript:" ng-click="lang('jp')" class="nokoreanlang">日本語</a></li>
-                    <div class="arrow_down"></div>
-                </ul>
-            </li>
-            <!--<li><a href="javascript:">Language <i class="icon_arrow"></i></a></li>-->
-            <!--<li>
-                <form action="">
-                    <input type="text" placeholder="Search">
-                    <i class="icon_search"></i>
-                </form>
-            </li>-->
+            <li><a href="#">主页</a></li>
+            <li><a href="#/d2">能源链</a></li>
+            <li><a href="#d3">能源宝</a></li>
+            <li><a href="#d4">应用场景</a></li>
+            <li><a href="#d5">视点</a></li>
+            <li><a href="#d6">团队</a></li>
+            <li><a href="#d7">合作伙伴</a></li>
+            <li><a href="#"></a></li>   
         </ul>
     </div>
     <div class="mobile_btn active">
@@ -68,23 +46,14 @@
 </nav>
 <div id="mobile_nav">
     <ul class="menu">
-        <li><a href="/" ng-bind="language.d1"></a></li>
-        <li><a href="/documents" ng-bind="language.d2"></a></li>
-        <li><a href="{{language.d100}}" ng-bind="language.d3"></a></li>
-        <li><a href="{{language.d1001}}" ng-bind="language.d3001"></a></li>
-        <li><a href="{{language.d102}}" ng-bind="language.d5"></a></li>
-        <li><a href="{{language.d101}}" ng-bind="language.d7"></a></li>
-        <li><a href="{{language.d103}}" ng-bind="language.d9"></a></li>
-        <li><a href="/about" ng-bind="language.d8"></a></li>
-        <li>
-            <a href="javascript:">Language</a>
-            <ul class="lang_menu">
-                <li><a href="javascript:" ng-click="lang('en')" class="nokoreanlang">English</a></li>
-                <li><a href="javascript:" ng-click="lang('cn')" class="nokoreanlang">中文</a></li>
-                <li><a href="javascript:" ng-click="lang('ko')" class="koreanlang">한국어</a></li>
-                <li><a href="javascript:" ng-click="lang('jp')" class="nokoreanlang">日本語</a></li>
-            </ul>
-        </li>
+        <li><a href="#">主页</a></li>
+        <li><a href="#d2">能源链</a></li>
+        <li><a href="#d3">能源宝</a></li>
+        <li><a href="#d4">应用场景</a></li>
+        <li><a href="#d5">视点</a></li>
+        <li><a href="#d6">团队</a></li>
+        <li><a href="#d7">合作伙伴</a></li>
+        <li><a href="#"></a></li>   
     </ul>
 </div>
     <div id="banner">
@@ -102,20 +71,6 @@
             </div>
             <a  style="display: none"  href="{{language.d167}}" class="link open headtext-in letterbtn"><span ng-bind="language.d166"></span>&nbsp;<i class="icon_arrow"></i></a>
             <a  href="{{language.d167a}}" class="link open headtext-in Trionesbtn"><span ng-bind="language.d166a"></span>&nbsp;<i class="icon_arrow"></i></a>
-<!--             <ul class="btn" >
-                <li class="headtext-in letterbtn" style="display: none">
-                    <a class="letterbtn " href="https://github.com/ontio" target= _blank><span>GitHub</span>&nbsp;<i class="icon_arrow"></i></a>
-                </li>
-                <li class="headtext-in Trionesbtn">
-                    <a class="Trionesbtn " href="https://goo.gl/forms/UuSf4YN0H3Y3dDqm2" target= _blank><span ng-bind="language.d171"></span>&nbsp;<i class="icon_arrow"></i></a>
-                </li>
-                <li class="headtext-in letterbtn" style="display: none">
-                    <a  href="https://discordapp.com/invite/4TQujHj" class="banner_one letterbtn "><span ng-bind="language.d77"></span>&nbsp;<i class="icon_arrow"></i></a>
-                </li>
-                <li class="headtext-in Trionesbtn">
-                    <a  href="{{language.d174}}" class="banner_one Trionesbtn "><span ng-bind="language.d172"></span>&nbsp;<i class="icon_arrow"></i></a>
-                </li>
-            </ul> -->
             <ul class="btn letterbtnbtn headtext-in" style="display: none" >
                 <li >
                     <a  href="https://github.com/ontio" target= _blank><span>GitHub</span>&nbsp;<i class="icon_arrow"></i></a>
@@ -371,26 +326,6 @@
                                     <p class="subtitle" ng-bind="language.d124"></p>
                                 </div>
                             </li>
-                            <!--<li>-->
-                                <!--<div class="time">-->
-                                    <!--<p>22</p>-->
-                                    <!--<span>08/18</span>-->
-                                <!--</div>-->
-                                <!--<div class="info">-->
-                                    <!--<p class="title">Onchain Ranks Among KPMGâs Top</p>-->
-                                    <!--<p class="subtitle">iOS 11 will leaur undern to deepen your understandiuu</p>-->
-                                <!--</div>-->
-                            <!--</li>-->
-                            <!--<li>-->
-                                <!--<div class="time">-->
-                                    <!--<p>22</p>-->
-                                    <!--<span>08/18</span>-->
-                                <!--</div>-->
-                                <!--<div class="info">-->
-                                    <!--<p class="title">Onchain Ranks Among KPMGâs Top</p>-->
-                                    <!--<p class="subtitle">iOS 11 will leaur undern to deepen your understandiuu</p>-->
-                                <!--</div>-->
-                            <!--</li>-->
                         </ul>
                     </a>
                 </div>
@@ -525,7 +460,7 @@
                 <button class="two" ng-bind="language.d88"></button>
             </div>
         </div>
-        <div class="container-frend-wrapper">
+        <div id="d7" class="container-frend-wrapper">
             <div class="container container-frend">
                 <div class="inner">
                     <h3>{{language.d168}}</h3>
