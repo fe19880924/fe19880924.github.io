@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/index_media.css">
     
-    <title>Ontology</title>
+    <title>EnergyChain</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113878921-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -53,7 +53,7 @@
         <li><a href="#d5">视点</a></li>
         <li><a href="#d6">团队</a></li>
         <li><a href="#d7">合作伙伴</a></li>
-        <li><a href="#"></a></li>   
+        <li><a href="#"></a></li>
     </ul>
 </div>
     <div id="banner">
@@ -95,6 +95,7 @@
             </div>
         </div>
     </div>
+    <div id="/d2"></div>
     <main id="main">
         <div class="content">
             <div class="first_info">
@@ -138,6 +139,7 @@
                             <p class=" info_part-item-d" ng-bind="language.d44"></p>
                             <!--<p class="text1">Protocols</p>-->
                         </div>
+            <div id="/d3"></div>
                         <div id="d43D" class="menu_posi">
                             <h3 ng-bind="language.d43"></h3>
                             <p ng-bind="language.d44"></p>
@@ -187,67 +189,64 @@
                 <p class="title" ng-bind="language.d13"></p>
                 <ul class="menu">
                     <li>
-                        <i id="d14T" class="icon_l"></i>
-                        <div  class="text">
-                            <p class="text1" ng-bind="language.d14T"></p>
-                            <p class=" info_part-item-d" ng-bind="language.d15"></p>
-                        </div>
-                        <div id="d14D" class="menu_posi">
-                            <h3 ng-bind="language.d14"></h3>
-                            <p ng-bind="language.d15"></p>
-                        </div>
-                    </li>
-                    <li>
-                        <i id="d16T" class="icon_l"></i>
-                        <div class="text">
-                            <p class="text1" ng-bind="language.d16T"></p>
-                            <p class=" info_part-item-d" ng-bind="language.d17"></p>
-                        </div>
-                        <div id="d16D" class="menu_posi">
-                            <h3 ng-bind="language.d16"></h3>
-                            <p ng-bind="language.d17"></p>
-                        </div>
-                    </li>
-                    <li>
-                        <i id="d18T" class="icon_l"></i>
-                        <div class="text">
-                            <p class="text1" ng-bind="language.d18T"></p>
-                            <p class=" info_part-item-d" ng-bind="language.d19"></p>
-                        </div>
-                        <div id="d18D" class="menu_posi">
-                            <h3 ng-bind="language.d18"></h3>
-                            <p ng-bind="language.d19"></p>
-                        </div>
+                        <img style="width: 100%;" src="/images/index2/jiagou.png">
                     </li>
                 </ul>
             </div>
+            <div id="/d4"></div>
             <p class="ontology_scenes" ng-bind="language.d78"></p>
             <div class="ontology_ul">
                 <ul>
-                    <li>
+                    <li class="c1">
                         <i class="icon"></i>
-                        <p class="title" ng-bind="language.d45"></p>
-                        <p class="text" ng-bind="language.d46"></p>
+                        <p class="title">广义电网</p>
+                        <p class="text">广泛聚合分布式能源、需求响应、分布式储能等进行集中管理、统一调度，进而改进分布式电源容量小，并且出力有间断性和随机性的问题，实现不同虚拟发电资源的协同以及分布式能源消纳。为虚拟发电资源的交易提供成本低廉、公开透明的系统平台，基于能源链建立虚拟发电厂信息平台和虚拟发电资源市场交易平台，虚拟发电厂与虚拟发电资源可以在信息平台上进行双向选择。</p>
                     </li>
-                    <li>
+                    <li class="c1">
                         <i class="icon"></i>
-                        <p class="title" ng-bind="language.d47"></p>
-                        <p class="text" ng-bind="language.d48"></p>
+                        <p class="title">能源交易平台</p>
+                        <p class="text">能源链为所有的参与者提供一个去中心化、公开透明自制的交易平台。系统允许各种应用程序宿主进入系统，用户在交易平台中既可以获得清洁价廉的能源，同时还可以获得其他的产品和服务。</p>
                     </li>
-                    <li>
+                    <li class="c1">
                         <i class="icon"></i>
-                        <p ng-if="!language.dlangflag" class="title sp_scenes_title" ng-bind="language.d49"></p>
-                        <p ng-if="language.dlangflag" class="title " ng-bind="language.d49"></p>
-                        <p class="text" ng-bind="language.d50"></p>
+                        <p class="title">信息安全系统</p>
+                        <p class="text">能源链去中心化的本质有助于解决物理信息系统中面临的部分安全问题，在感知执行层安全上，每个传感器都有自己固定的私钥，并在每次向全网广播数据时，在数据包末尾添加用私钥加密的数字签名。在数据传输层上，系统中节点链接成网状结构，使得数据通路存在冗余。即使攻击者阻断了网络拓扑中的部分数据通路，信息仍然可通过其他数据通路进行传输。在应用控制层上，区块链系统中所有用户的个人信息具有绝对隐私，因此也不存在隐私泄露问题。</p>
                     </li>
                 </ul>
-            </div>
-            <div class="download_white_paper">
-                <i class="icon_arrow"></i>
-                <a style="cursor:pointer;color:#fff" target="view_window" href="{{language.d156}}" download="{{language.d157}}">
-                    <p class="text t2" ng-bind="language.d93"></p>
-                    <p class="text t1" ng-bind="language.d51"></p>
-                </a>
+                <ul>
+                    <li class="c2">
+                        <i class="icon"></i>
+                        <p class="title">电动汽车</p>
+                        <p class="text">在能源链系统我们通过广义电网来实现分布式电桩的部署和应用。在传统电网无法布置或者成本较高的地方，建造光伏、风电充电桩来满足充电汽车或者无人驾驶汽车的日常充电需求。同时无人零售的深入，能源链用户可以直接通过EC来实现充电支付，维修支付，车后服务支付以及汽车广告支付等。</p>
+                    </li>
+                    <li class="c2">
+                        <i class="icon"></i>
+                        <p class="title">社区电超市</p>
+                        <p class="text">在社区生活中通过部署分布式光伏资源，实现社区能源模型，电池管理，建议一个公共的节约型电力池满足社区日常生活的弹性需求以及应急需求。用户可以建造个人能源系统，买卖电力，太阳能，燃气等能源甚至于日常生活用品，实现收益的同时也实现个人从单纯的能源消费者到能源生产者的转变。结合社区广告\公告牌，发布供求信息以及其他信息，获取额外的广告收益。</p>
+                    </li>
+                    <li class="c2">
+                        <i class="icon"></i>
+                        <p class="title">碳排放权</p>
+                        <p class="text">能源链能够为碳排放权的认证和碳排放的计量提供一个智能化的系统平台。给予每一单位的碳排放权专有 ID，加盖时间戳，并记录在区块链中。光伏、风力发电企业通过能源宝采集每台机组的发电量以及时间实时向能源链系统进行更新；能源链将根据发电公司的机组排放情况，采用智能合约方式自动确认碳排放权并且量化；碳交易时，每当碳排放权发生一次所有权转移，交易信息即记录在区块链中，并且不可篡改；能源链系统将自动进行数字资产增减。</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="c3">
+                        <i class="icon"></i>
+                        <p class="title">多能源协同</p>
+                        <p class="text">能源链能够为多能源系统提供一个去中心化的系统平台。采用区块链记录不同能源系统的实时生产信息及其成本，存在跨能源类型的市场时，可记录多个能源系统之间的交易及其价格信息，在此基础上实时生成各地区各类能源的边际价格(例如节点电价、节点气价、节点热价)； 不同能源系统可以通过区块链中的边际价格信息对自身系统的运行进行优化，或通过签署智能合约，根据边际价格信息执行自动调度指令，并且根据边际价格信息进行能量费用结算。</p>
+                    </li>
+                    <li class="c3">
+                        <i class="icon"></i>
+                        <p class="title">能源市场结算</p>
+                        <p class="text">能源链为能源市场提供快速、低成本和透明的调度优化和管理，同时根绝地域不同结合当地市场价格制定统一的结算单位和结算模式。</p>
+                    </li>
+                    <li class="c3">
+                        <i class="icon"></i>
+                        <p class="title"></p>
+                        <p class="text"></p>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="downloads">
@@ -266,107 +265,7 @@
                 </div>
             </div>
         </div>
-        <div class="container one">
-            <div class="news_events">
-                <div class="news article">
-                    <div class="big_title">
-                        <p class="title" ng-bind="language.d81"></p>
-                    </div>
-                    <div class="news_left">
-                        <a href="{{language.d104}}">
-                            <div class="img"><i class="icon_bookmark"></i></div>
-                            <div class="info">
-                                <p class="title" ng-bind="language.d105"></p>
-                                <p class="text" ng-bind="language.d106"></p>
-                                <p class="time">{{language.d107}} <span ng-bind="language.d108"></span> {{language.d109}}</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news_right">
-                        <ul>
-                            <li>
-                                <a href="{{language.d110}}">
-                                    <div class="info">
-                                        <p class="title" ng-bind="language.d111"></p>
-                                        <p class="text" ng-bind="language.d112"></p>
-                                        <p class="time">{{language.d113}} <span ng-bind="language.d114"></span> {{language.d115}}</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{language.d116}}">
-                                    <div class="info">
-                                        <p class="title" ng-bind="language.d117"></p>
-                                        <p class="text" ng-bind="language.d118"></p>
-                                        <p class="time">{{language.d119}} <span ng-bind="language.d120"></span> {{language.d121}}</p>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="events article">
-                    <div class="big_title">
-                        <p class="title" ng-bind="language.d83"></p>
-                    </div>
-                    <a href="{{language.d122}}">
-                        <div class="img"></div>
-                        <ul class="events_list">
-                            <li>
-                                <div ng-if="language.d1231" class="cntime">
-                                    <span>18/06</span>
-                                    <p>30</p>
-                                </div>
-                                <div ng-if="!language.d1231" class="time">
-                                    <p>30</p>
-                                    <span>06/18</span>
-                                </div>
-                                <div class="info">
-                                    <p class="title" ng-bind="language.d123"></p>
-                                    <p class="subtitle" ng-bind="language.d124"></p>
-                                </div>
-                            </li>
-                        </ul>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="frend_url">
-            <div class="inner">
-                <h3 ng-bind="language.d84"></h3>
-                <ul class="one">
-                    <li>
-                        <a target="_blank" href="https://themerkle.com/ontology-a-new-public-chain-infrastructure/">
-                            <img src="images/index/logo_themerckle_2x.png" title="The Merkle" alt="The Merkle"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="http://markets.businessinsider.com/news/stocks/blockchain-public-platform-ontology-network-officially-launched-in-new-york-1010407496">
-                            <img src="images/index/logo_businessinsider_2x.png" title="Business Insider" alt="Business Insider"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.techbullion.com/ontology-network-launched-in-new-york/">
-                            <img src="images/index/logo_techbullion_2x.png" title="Tech Bullion" alt="Tech Bullion"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://neonewstoday.com/development/onchain-announce-ontology-a-distributed-trust-network-on-neocontract/">
-                            <img src="images/index/logo_neonewstoday_2x.png" title="NEO News Today" alt="NEO News Today"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://thenextweb.com/2018/02/16/blockchain-streamlining-business-operations/?utm_source=t.co&utm_medium=referral&utm_content=How%20blockchain%20is%20streamlining%20business%20operations&utm_campaign=share%2Bbutton">
-                            <img src="images/index/logo_thenextweb_2x.png" title="The Next Web" alt="The Next Web"/>
-                        </a>
-                    </li>
-                </ul>
-                <ol class="tab_btn">
-                    <li></li>
-                    <li></li>
-                </ol>
-            </div>
-        </div>
+        <div id="/d5"></div>
         <div class="team">
             <div class="inner">
                 <h3 ng-bind="language.d85"></h3>
@@ -460,7 +359,7 @@
                 <button class="two" ng-bind="language.d88"></button>
             </div>
         </div>
-        <div id="d7" class="container-frend-wrapper">
+        <div id="/d7" class="container-frend-wrapper">
             <div class="container container-frend">
                 <div class="inner">
                     <h3>{{language.d168}}</h3>
@@ -558,15 +457,10 @@
             <div class="right">
                 <ul>
                     <li><a target="view_window" href="{{language.d150}}"><img src="images/footer_01.png"/></a></li>
-                    <li><a target="view_window" href="{{language.d151}}"><img src="images/footer_02.png"/></a></li>
                     <li><a target="view_window" href="{{language.d152}}"><img src="images/footer_03.png"/></a></li>
                     <li><a target="view_window" href="{{language.d153}}"><img src="images/footer_04.png"/></a></li>
+                    <li><a target="view_window" href=" https://www.instagram.com/nenc_energychain/"><img src="images/footer_09.png"/></a></li>
                     <li><a target="view_window" href="{{language.d154}}"><img src="images/footer_05.png"/></a></li>
-                    <li><a target="view_window" href="{{language.d155}}"><img src="images/footer_06.png"/></a></li>
-                    <li><a  href="mailto:contact@ont.io"><img src="images/footer_08.png"/></a></li>
-                    <li><a target="view_window" href="https://github.com/ontio"><img src="images/footer_07.png"/></a></li>
-                    <li><a target="view_window" href="https://www.linkedin.com/company/ontology-network-official/"><img src="images/footer_09.png"/></a></li>
-                    <!--<li><img src="images/footer_07.png"/></li>-->
                 </ul>
             </div>
         </div>
@@ -574,24 +468,25 @@
             <ul class="dl">
                 <li>
                     <ul class="down_list">
-                        <li><a href="/" ng-bind="language.d147"></a></li>
-                        <li><a href="/about" ng-bind="language.d96"></a></li>
-                        <li><a href="{{language.d103}}" ng-bind="language.d97"></a></li>
-                        <li><a href="{{language.d100}}" ng-bind="language.d95"></a></li>
+                        <li><a href="#">主页</a></li>
+                        <li><a href="#d3">能源宝</a></li>
+                        <li><a href="#d5">视点</a></li>
+                        <li><a href="#d7">合作伙伴</a></li>
+                        <li><a href="#"></a></li>
                     </ul>
                 </li>
                 <li>
                     <ul class="down_list">
-                        <li><a href="/documents" ng-bind="language.d94"></a></li>
-                        <li><a href="{{language.d102}}" ng-bind="language.d98"></a></li>
-                        <li><a href="{{language.d101}}" ng-bind="language.d99"></a></li>
+                        <li><a href="#d2">能源链</a></li>
+                        <li><a href="#d4">应用场景</a></li>
+                        <li><a href="#d6">团队</a></li>
                     </ul>
                 </li>
             </ul>
             <div class="wei" ng-if="language.d148">
                 <div class="right">
                     <p class="one">wechat</p>
-                    <img src="images/footer_08.jpg"/>
+                    <img style="width: 86px;" src="images/footer_08.jpg"/>
                 </div>
                 <div class="foot_posi">
                     <a href="javascript:" class="mo">{{key_lang}}<img src="images/foot_posi.png"/></a>
@@ -602,7 +497,7 @@
                 </div>
             </div>
         </div>
-        <div class="dot">Copyright © 2018 The Ontology Team</div>
+        <div class="dot">Copyright © 2018 The EnergyChain Team</div>
     </div>
 </footer>
 <script src="./js/jquery-1.10.2.min.js"></script>
