@@ -304,30 +304,39 @@
 }
 #main .content .ontology_ul ul li.c1:nth-of-type(1) i.icon{
     background: url("../images/index2/guangyi.png")no-repeat center/cover;
+    background-size: 70%;
 }
 #main .content .ontology_ul ul li.c1:nth-of-type(2) i.icon{
     background: url("../images/index2/nengyuan.png")no-repeat center/cover;
+    background-size: 70%;
 }
 #main .content .ontology_ul ul li.c1:nth-of-type(3) i.icon{
     background: url("../images/index2/xinxi.png")no-repeat center/cover;
+    background-size: 70%;
 }
 #main .content .ontology_ul ul li.c2:nth-of-type(1) i.icon{
     background: url("../images/index2/diandong.png")no-repeat center/cover;
+    background-size: 70%;
 }
 #main .content .ontology_ul ul li.c2:nth-of-type(2) i.icon{
     background: url("../images/index2/dianchao.png")no-repeat center/cover;
+    background-size: 70%;
 }
 #main .content .ontology_ul ul li.c2:nth-of-type(3) i.icon{
     background: url("../images/index2/tanpai.png")no-repeat center/cover;
+    background-size: 70%;
 }
 #main .content .ontology_ul ul li.c3:nth-of-type(1) i.icon{
     background: url("../images/index2/duoneng.png")no-repeat center/cover;
+    background-size: 70%;
 }
 #main .content .ontology_ul ul li.c3:nth-of-type(2) i.icon{
     background: url("../images/index2/shichang.png")no-repeat center/cover;
+    background-size: 70%;
 }
 #main .content .ontology_ul ul li.c3:nth-of-type(3) i.icon{
     background: url("../images/index2/0.png")no-repeat center/cover;
+    background-size: 70%;
 }
 #main .content .ontology_ul ul li .title:nth-of-type(1){
     margin-top: 0.8rem;
@@ -1074,4 +1083,10 @@
     100%{ 
     opacity: 0.5; 
     } 
+}
+
+.nyb-img {
+    width: 20px;
+    margin-top: -2px;
+    margin-right: 10px;
 }
