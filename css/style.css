@@ -141,7 +141,7 @@
     width: 22px;
     margin: 0 12px;
     padding: 0;
-	#background: url('../images/index/change_l_2.jpg')no-repeat center/cover;
+	background: url('../images/index/change_l_2.jpg')no-repeat center/cover;
 }
 #nav .content ul.menu li>form>input{
     background: transparent;

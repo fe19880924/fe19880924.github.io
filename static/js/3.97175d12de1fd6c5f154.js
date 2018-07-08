@@ -733,7 +733,7 @@ webpackJsonp([3, 10], {
                     t = t.substr(0, 4);
                     switch (this.addCookie("lang", "en"), t) {
                     case "/":
-                        window.location.href = "https://ont.io/";
+                        //window.location.href = "https://ont.io/";
                         break;
                     case "/new":
                         this.$router.push({
