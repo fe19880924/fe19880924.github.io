@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://www.pchain.io/ -->
+<html class="os-windows screen-desktop-wide device-desktop"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Promotion Chain official website</title>
+
+<meta name="keywords" content="Promotion Chain,PC,Promotion Chain official website">
+<meta name="description" content="Promotion Chain is the world’s leading brand in the gaming blockchain, reshaping the game industry structure with decentralized concept to create a global de-centralized gaming ecosystem.">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><!-- 不让用户手动的去改变页面的大小  -->
+<meta name="apple-mobile-web-app-capable" content="yes"><!--开启对web app的支持-->
+<meta name="format-detection" content="telephone=no"><!--主要是正对苹果手机将数字自动识别为号码-->
+
+<link rel="stylesheet" href="./canvas_files/zui.min.css">
+<link rel="stylesheet" type="text/css" href="./canvas_files/reset.css">
+ <link rel="shortcut icon" href="http://www.pchain.io/themes/simpleboot3/public/assets/images/favicon.ico">
+ <!--[if lt IE 9]>
+	<script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="https://cdn.bootcss.com/livingston-css3-mediaqueries-js/1.0.0/css3-mediaqueries.min.js"></script>
+<![endif]-->
+<script src="./canvas_files/hm.js"></script><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?102b1431eee0f6a6ffbdc89462ce6e14";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<link rel="stylesheet" type="text/css" href="./canvas_files/index.css"><link rel="stylesheet" type="text/css" href="./canvas_files/en.css"></head>
+
+
+
+<body>
+    <div class="wrapper content_box">
+        <div class="box1" id="head_height">
+    <div id="head_wrap" class="head">
+        <div class="nav content_box">
+            
+            <div class="nav_login disnone">
+        <a href="http://www.pchain.io/" class="nav_reg_a">Sign in</a>
+        <a href="http://www.pchain.io/" class="nav_log_a">Registered</a>
+    </div>
+    <button class="close_btn"><i class="icon icon-off" id="close_btn"></i></button>
+</div>
+        <button class="open_btn"><i class="icon icon-bars" id="open_btn"></i></button>
+    </div>
+    <div class="box1_main">
+        <div class="box1_center">
+            <!-- <p class="box1_title">Promotion Chain</p> -->
+            <!-- <span></span> -->
+            <p class="box1_p">Promotion chain has come to counter difficulties facing traditional promotion industry. It is developed with the support of block chain technology. Through decentralizing Promotion Circle, promoters’ community and credit accumulation system, it can achieve win-win results for customers and promoters, redefine the industry of promotion, develop a layout of worldwide promotional strategy and make a difference with promotion.</p>
+        </div>
+        
+    </div>
+    <p class="box1_mouse "><em class="box1_mouse_icon"></em></p>
+    <div id="particles-js" class=""><canvas class="particles-js-canvas-el" width="1293" height="653" style="width: 100%; height: 100%;"></canvas></div>
+    <div class="bg2 "></div>
+</div>
+
+    <!-- Javascript -->
+    <script src="./canvas_files/jquery.min.js"></script>
+    <!-- zui -->
+    <script src="./canvas_files/zui.min.js"></script>
+    <!-- particles -->
+    <script src="./canvas_files/particles.min.js"></script>
+    <script src="./canvas_files/app.js"></script>
+    <!-- nav -->
+
+    <script src="./canvas_files/head_nav.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./canvas_files/classie.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./canvas_files/nav.js" type="text/javascript" charset="utf-8"></script>
+     
+    <script>
+        $('[name="nice-select"]').click(function (e) {
+            $('[name="nice-select"]').find('ul').hide();
+            $(this).find('ul').show();
+            e.stopPropagation();
+        });
+        $('[name="nice-select"] li').hover(function (e) {
+            $(this).toggleClass('on');
+            e.stopPropagation();
+        });
+        $('[name="nice-select"] li').click(function (e) {
+            var val = $(this).text();
+            $(this).parents('[name="nice-select"]').find('input').val(val);
+            $('[name="nice-select"] ul').hide();
+            e.stopPropagation();
+        });
+        $(document).click(function () {
+            $('[name="nice-select"] ul').hide();
+        });
+    </script>
+
+
+    
+<script>
+        //内容信息导航吸顶
+        $(document).ready(function () {
+            var navHeight = $("#head_height").offset().top;
+            var navFix = $("#head_wrap");
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > navHeight) {
+                    navFix.addClass("navfix");
+                }
+                else {
+                    navFix.removeClass("navfix");
+                }
+            })
+        })
+    //内容信息导航锚点
+        $('.head').navScroll({
+            mobileDropdown: true,
+            mobileBreakpoint: 768,
+            scrollSpy: true
+        });
+    </script>
+</body></html>
