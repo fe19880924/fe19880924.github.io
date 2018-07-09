@@ -365,57 +365,95 @@ var _hmt = _hmt || [];
      </div>
     </div> 
     <script type="text/javascript">
-       
+        function switchSelect(_this) {
+          this.SelectFlag = !0;
+          var e = "selected",
+          a = $(_this);
+          if (a.hasClass(e)) {
+            a.removeClass(e), $("#teamDetail").remove();
+          } else {
+            $(".selected").removeClass(e);
+            a.addClass(e);
+            addDetail(_this);
+          }
+        }
+        function addDetail(_this) {
+          var t = $(_this),
+          e = t.parent("ul");
+          if (t) {
+              var a, o = t.attr("t-city");
+              $("#teamDetail").remove();
+              var i, n = t.siblings("li").length + 1,
+              s = Math.floor(e.width() / (t.width() + 20)),
+              l = Math.ceil((t.index() + 1) / s),
+              r = l * s - 1;
+              a = teamListBJ[t.data('index')],
+              i = r >= n ? e.find("li:last") : e.find("li:eq(" + r + ")");
+              var c = '<div class="team-detail margin4-bottom" id="teamDetail"><div class="detail-img"><img src=' + a.image + '></div><div class="detail-intro"><p class="text1 dark-text">' + a.name + '</p><p class="text2 margin4-top dark-text">' + a.duty + '</p><p class="text3 margin4-top">' + a.experience + "</p></div></div>";
+              $(c).insertAfter(i),
+              this.lasttimeline = l
+          }
+        }
+       $(function () {
+          $.getJSON('./static/file/TeamFileZH.json', function (data) {
+            window.teamListBJ = data.teamList;
+            console.log(data.teamList);
+          });
+          $('.team-member li').click(function () {
+            //$(this).addClass("selected");
+            switchSelect(this);
+          });
+       });
     </script>
     <div class="container home-detail zindex ">
      <div class="team-container margin2-top">
       <p class="text-left head2 light-text">创始团队</p> 
       <ul class="team-member margin3-top teams-ul">
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/lijun.jpg" /></span> <p class="head3 margin4-top">李俊</p> <p class="text2 margin4-top">本体负责人</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/季宙栋.jpg" /></span> <p class="head3 margin4-top">季宙栋</p> <p class="text2 margin4-top">首席战略官</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/胡凝.jpg" /></span> <p class="head3 margin4-top">胡凝</p> <p class="text2 margin4-top">资深协议架构专家</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/丛宏雷.jpg" /></span> <p class="head3 margin4-top">丛宏雷</p> <p class="text2 margin4-top">资深区块链技术专家</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/翁俊杰.jpg" /></span> <p class="head3 margin4-top">翁俊杰</p> <p class="text2 margin4-top">区块链核心技术管理</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/肖旻.jpg" /></span> <p class="head3 margin4-top">肖旻</p> <p class="text2 margin4-top">金融系统技术总监</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/杨文涛.jpg" /></span> <p class="head3 margin4-top">杨文涛</p> <p class="text2 margin4-top">商务拓展VP</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/周炎.jpg" /></span> <p class="head3 margin4-top">周炎</p> <p class="text2 margin4-top">技术管理总监</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/温萌萌.jpg" /></span> <p class="head3 margin4-top">温萌萌</p> <p class="text2 margin4-top">商务拓展总监</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/赖智超.jpg" /></span> <p class="head3 margin4-top">赖智超</p> <p class="text2 margin4-top">区块链核心研发工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/王兵.jpg" /></span> <p class="head3 margin4-top">王兵</p> <p class="text2 margin4-top">区块链核心研发工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/谈元.jpg" /></span> <p class="head3 margin4-top">谈元</p> <p class="text2 margin4-top">智能合约核心开发工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/刘攀.jpg" /></span> <p class="head3 margin4-top">刘攀</p> <p class="text2 margin4-top">资深系统工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/胡冠军.jpg" /></span> <p class="head3 margin4-top">胡冠军</p> <p class="text2 margin4-top">高级软件工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/张梦航.jpg" /></span> <p class="head3 margin4-top">张梦航</p> <p class="text2 margin4-top">资深系统工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/谢俊喜.jpg" /></span> <p class="head3 margin4-top">谢俊喜</p> <p class="text2 margin4-top">资深系统工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/周佩文.jpg" /></span> <p class="head3 margin4-top">周佩文</p> <p class="text2 margin4-top">资深系统工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/吕威.jpg" /></span> <p class="head3 margin4-top">吕威</p> <p class="text2 margin4-top">安全工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/夏坤贤.jpg" /></span> <p class="head3 margin4-top">夏坤贤</p> <p class="text2 margin4-top">信息安全研究员</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/李喜平.jpg" /></span> <p class="head3 margin4-top">李喜平</p> <p class="text2 margin4-top">高级项目经理</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/周喜.jpg" /></span> <p class="head3 margin4-top">周喜</p> <p class="text2 margin4-top">区块链核心研发工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/刘秋杉.jpg" /></span> <p class="head3 margin4-top">刘秋杉</p> <p class="text2 margin4-top">高级研究员</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/李颖轩.jpg" /></span> <p class="head3 margin4-top">李颖轩</p> <p class="text2 margin4-top">资深系统工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/刘一痕.jpg" /></span> <p class="head3 margin4-top">刘一痕</p> <p class="text2 margin4-top">资深系统工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/傅翔.jpg" /></span> <p class="head3 margin4-top">傅翔</p> <p class="text2 margin4-top">资深系统工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/郭笑杰.jpg" /></span> <p class="head3 margin4-top">郭笑杰</p> <p class="text2 margin4-top">高级软件工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/司帅帅.jpg" /></span> <p class="head3 margin4-top">司帅帅</p> <p class="text2 margin4-top">软件工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/张伟.jpg" /></span> <p class="head3 margin4-top">张伟</p> <p class="text2 margin4-top">高级软件工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/周强.jpg" /></span> <p class="head3 margin4-top">周强</p> <p class="text2 margin4-top">软件工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/苏凌霄.jpg" /></span> <p class="head3 margin4-top">苏凌霄</p> <p class="text2 margin4-top">前端开发工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/王大双.jpg" /></span> <p class="head3 margin4-top">王大双</p> <p class="text2 margin4-top">前端开发工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/刘婧.jpg" /></span> <p class="head3 margin4-top">刘婧</p> <p class="text2 margin4-top">前端开发工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/丁文彬.jpg" /></span> <p class="head3 margin4-top">丁文彬</p> <p class="text2 margin4-top">项目经理</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/王成.jpg" /></span> <p class="head3 margin4-top">王成</p> <p class="text2 margin4-top">软件工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/陈志杰.jpg" /></span> <p class="head3 margin4-top">陈志杰</p> <p class="text2 margin4-top">软件工程师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/安立.jpg" /></span> <p class="head3 margin4-top">安立</p> <p class="text2 margin4-top">高级产品经理</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/董丹.jpg" /></span> <p class="head3 margin4-top">董丹</p> <p class="text2 margin4-top">商务经理</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/蒋鼎峰.jpg" /></span> <p class="head3 margin4-top">蒋鼎峰</p> <p class="text2 margin4-top">政策和法律事务总监</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/Mathias.jpg" /></span> <p class="head3 margin4-top">戈霖</p> <p class="text2 margin4-top">全球开发经理</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/Walter.jpg" /></span> <p class="head3 margin4-top">杨晅</p> <p class="text2 margin4-top">高级海外业务拓展专员</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/付冰漪.jpg" /></span> <p class="head3 margin4-top">付冰漪</p> <p class="text2 margin4-top">市场总监</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/余思晴.jpg" /></span> <p class="head3 margin4-top">余思晴</p> <p class="text2 margin4-top">市场经理</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/DanielAssab.jpg" /></span> <p class="head3 margin4-top">唐家宁</p> <p class="text2 margin4-top">海外市场专员</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/段宏宇.jpg" /></span> <p class="head3 margin4-top">段宏宇</p> <p class="text2 margin4-top">UE 设计师</p></a></li>
-       <li t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/谢甜.jpg" /></span> <p class="head3 margin4-top">谢甜</p> <p class="text2 margin4-top">UI 设计师</p></a></li>
+       <li data-index="0" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/lijun.jpg" /></span> <p class="head3 margin4-top">李俊</p> <p class="text2 margin4-top">本体负责人</p></a></li>
+       <li data-index="1" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/季宙栋.jpg" /></span> <p class="head3 margin4-top">季宙栋</p> <p class="text2 margin4-top">首席战略官</p></a></li>
+       <li data-index="2" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/胡凝.jpg" /></span> <p class="head3 margin4-top">胡凝</p> <p class="text2 margin4-top">资深协议架构专家</p></a></li>
+       <li data-index="3" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/丛宏雷.jpg" /></span> <p class="head3 margin4-top">丛宏雷</p> <p class="text2 margin4-top">资深区块链技术专家</p></a></li>
+       <li data-index="4" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/翁俊杰.jpg" /></span> <p class="head3 margin4-top">翁俊杰</p> <p class="text2 margin4-top">区块链核心技术管理</p></a></li>
+       <li data-index="5" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/肖旻.jpg" /></span> <p class="head3 margin4-top">肖旻</p> <p class="text2 margin4-top">金融系统技术总监</p></a></li>
+       <li data-index="6" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/杨文涛.jpg" /></span> <p class="head3 margin4-top">杨文涛</p> <p class="text2 margin4-top">商务拓展VP</p></a></li>
+       <li data-index="7" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/周炎.jpg" /></span> <p class="head3 margin4-top">周炎</p> <p class="text2 margin4-top">技术管理总监</p></a></li>
+       <li data-index="8" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/温萌萌.jpg" /></span> <p class="head3 margin4-top">温萌萌</p> <p class="text2 margin4-top">商务拓展总监</p></a></li>
+       <li data-index="9" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/赖智超.jpg" /></span> <p class="head3 margin4-top">赖智超</p> <p class="text2 margin4-top">区块链核心研发工程师</p></a></li>
+       <li data-index="10" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/王兵.jpg" /></span> <p class="head3 margin4-top">王兵</p> <p class="text2 margin4-top">区块链核心研发工程师</p></a></li>
+       <li data-index="11" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/谈元.jpg" /></span> <p class="head3 margin4-top">谈元</p> <p class="text2 margin4-top">智能合约核心开发工程师</p></a></li>
+       <li data-index="12" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/刘攀.jpg" /></span> <p class="head3 margin4-top">刘攀</p> <p class="text2 margin4-top">资深系统工程师</p></a></li>
+       <li data-index="13" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/胡冠军.jpg" /></span> <p class="head3 margin4-top">胡冠军</p> <p class="text2 margin4-top">高级软件工程师</p></a></li>
+       <li data-index="14" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/张梦航.jpg" /></span> <p class="head3 margin4-top">张梦航</p> <p class="text2 margin4-top">资深系统工程师</p></a></li>
+       <li data-index="15" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/谢俊喜.jpg" /></span> <p class="head3 margin4-top">谢俊喜</p> <p class="text2 margin4-top">资深系统工程师</p></a></li>
+       <li data-index="16" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/周佩文.jpg" /></span> <p class="head3 margin4-top">周佩文</p> <p class="text2 margin4-top">资深系统工程师</p></a></li>
+       <li data-index="17" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/吕威.jpg" /></span> <p class="head3 margin4-top">吕威</p> <p class="text2 margin4-top">安全工程师</p></a></li>
+       <li data-index="18" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/夏坤贤.jpg" /></span> <p class="head3 margin4-top">夏坤贤</p> <p class="text2 margin4-top">信息安全研究员</p></a></li>
+       <li data-index="19" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/李喜平.jpg" /></span> <p class="head3 margin4-top">李喜平</p> <p class="text2 margin4-top">高级项目经理</p></a></li>
+       <li data-index="20" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/周喜.jpg" /></span> <p class="head3 margin4-top">周喜</p> <p class="text2 margin4-top">区块链核心研发工程师</p></a></li>
+       <li data-index="21" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/刘秋杉.jpg" /></span> <p class="head3 margin4-top">刘秋杉</p> <p class="text2 margin4-top">高级研究员</p></a></li>
+       <li data-index="22" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/李颖轩.jpg" /></span> <p class="head3 margin4-top">李颖轩</p> <p class="text2 margin4-top">资深系统工程师</p></a></li>
+       <li data-index="23" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/刘一痕.jpg" /></span> <p class="head3 margin4-top">刘一痕</p> <p class="text2 margin4-top">资深系统工程师</p></a></li>
+       <li data-index="24" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/傅翔.jpg" /></span> <p class="head3 margin4-top">傅翔</p> <p class="text2 margin4-top">资深系统工程师</p></a></li>
+       <li data-index="25" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/郭笑杰.jpg" /></span> <p class="head3 margin4-top">郭笑杰</p> <p class="text2 margin4-top">高级软件工程师</p></a></li>
+       <li data-index="26" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/司帅帅.jpg" /></span> <p class="head3 margin4-top">司帅帅</p> <p class="text2 margin4-top">软件工程师</p></a></li>
+       <li data-index="27" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/张伟.jpg" /></span> <p class="head3 margin4-top">张伟</p> <p class="text2 margin4-top">高级软件工程师</p></a></li>
+       <li data-index="28" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/周强.jpg" /></span> <p class="head3 margin4-top">周强</p> <p class="text2 margin4-top">软件工程师</p></a></li>
+       <li data-index="29" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/苏凌霄.jpg" /></span> <p class="head3 margin4-top">苏凌霄</p> <p class="text2 margin4-top">前端开发工程师</p></a></li>
+       <li data-index="30" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/王大双.jpg" /></span> <p class="head3 margin4-top">王大双</p> <p class="text2 margin4-top">前端开发工程师</p></a></li>
+       <li data-index="31" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/刘婧.jpg" /></span> <p class="head3 margin4-top">刘婧</p> <p class="text2 margin4-top">前端开发工程师</p></a></li>
+       <li data-index="32" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/丁文彬.jpg" /></span> <p class="head3 margin4-top">丁文彬</p> <p class="text2 margin4-top">项目经理</p></a></li>
+       <li data-index="33" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/王成.jpg" /></span> <p class="head3 margin4-top">王成</p> <p class="text2 margin4-top">软件工程师</p></a></li>
+       <li data-index="34" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/陈志杰.jpg" /></span> <p class="head3 margin4-top">陈志杰</p> <p class="text2 margin4-top">软件工程师</p></a></li>
+       <li data-index="35" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/安立.jpg" /></span> <p class="head3 margin4-top">安立</p> <p class="text2 margin4-top">高级产品经理</p></a></li>
+       <li data-index="36" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/董丹.jpg" /></span> <p class="head3 margin4-top">董丹</p> <p class="text2 margin4-top">商务经理</p></a></li>
+       <li data-index="37" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/蒋鼎峰.jpg" /></span> <p class="head3 margin4-top">蒋鼎峰</p> <p class="text2 margin4-top">政策和法律事务总监</p></a></li>
+       <li data-index="38" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/Mathias.jpg" /></span> <p class="head3 margin4-top">戈霖</p> <p class="text2 margin4-top">全球开发经理</p></a></li>
+       <li data-index="39" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/Walter.jpg" /></span> <p class="head3 margin4-top">杨晅</p> <p class="text2 margin4-top">高级海外业务拓展专员</p></a></li>
+       <li data-index="40" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/付冰漪.jpg" /></span> <p class="head3 margin4-top">付冰漪</p> <p class="text2 margin4-top">市场总监</p></a></li>
+       <li data-index="41" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/余思晴.jpg" /></span> <p class="head3 margin4-top">余思晴</p> <p class="text2 margin4-top">市场经理</p></a></li>
+       <li data-index="42" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/DanielAssab.jpg" /></span> <p class="head3 margin4-top">唐家宁</p> <p class="text2 margin4-top">海外市场专员</p></a></li>
+       <li data-index="43" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/段宏宇.jpg" /></span> <p class="head3 margin4-top">段宏宇</p> <p class="text2 margin4-top">UE 设计师</p></a></li>
+       <li data-index="44" t-city="0"><a class="img-content"><span class="img-cover"><img src="./teams/谢甜.jpg" /></span> <p class="head3 margin4-top">谢甜</p> <p class="text2 margin4-top">UI 设计师</p></a></li>
       </ul>
      </div>
     </div> 
