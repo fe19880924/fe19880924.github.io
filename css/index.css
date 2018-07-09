@@ -137,7 +137,7 @@
 }
 #main .content{
     width: 30.0rem;
-    margin: 2.0rem auto 0;
+    margin: 1.0rem auto 0;
 }
 #main .content .first_info{
     padding: 0 3.15rem;
@@ -272,10 +272,10 @@
 /*本体介绍*/
 #main .content p.ontology_scenes{
     font-size: 1.0rem;color: #32a4be;text-align: center;
-    margin-top: 3.375rem;
+    margin-top: 1.5rem;
 }
 #main .content .ontology_ul{
-    margin: 2.125rem 0 1.5rem 0;
+    margin: 0.5rem 0 1.5rem 0;
 }
 #main .content .ontology_ul ul{
     display: flex;
@@ -288,15 +288,19 @@
     margin-right: 0;
 }
 #main .content .ontology_ul ul li i.icon{
-    display: block;width: 4.4rem;height: 4.1rem;
+    display: block;width: 4.4rem;height: 2.8rem;
     margin: 0 auto;
+        margin-bottom: -0.5rem;
 }
 #main .content .ontology_ul ul li .title{
     font-family: 'OpenSansBold';font-size: 0.5rem;color: #3e3a39;text-align: center; width: 60%;
     margin: 0 0 0.5rem 20%;
 }
 #main .content .ontology_ul ul li .text{
-    font-size: 0.4rem;color: #AFACAC;text-align: left;
+    font-size: 14px;
+    color: #AFACAC;
+    line-height: 1.6 !important;
+    text-align: left;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 16;
@@ -456,7 +460,7 @@
 }
 #main .container .news_events .news .news_left .img{
     position: relative;
-    height: 6.65rem;background-color: gray;
+    height: 7rem;background-color: gray;
 }
 #main>.one .news_events .news .news_left .img{
    background: gray url('https://s26.postimg.cc/aa8ab5jh5/Ontology_s_Founder_Jun_LI.jpg')no-repeat center/cover;
@@ -803,7 +807,7 @@
     margin: 0 auto;
 }
 #main .container-frend .inner h3{
-    padding: 1.8rem 0;
+    /*padding: 1.8rem 0;*/
     text-align: center;
     font-size: 1rem;
     color:#32a4be;
@@ -836,7 +840,7 @@
 .container-frend-wrapper{
     widows: 100%;
     background: #f7f8f8;
-    margin-top: 1.8rem;
+    margin-top: 1rem;
 }
 @media only screen and (min-width: 768px) {
     .frend_img_li_1{
