@@ -38,13 +38,15 @@
      <li><a href="#d4">应用场景</a></li> 
      <li><a href="#d5">视点</a></li> 
      <li><a href="#d6">团队</a></li> 
-     <li><a href="#d7">合作伙伴</a></li> 
+     <li><a href="#d7">合作伙伴</a></li>
+     <li></li>
+      <!-- 
      <li class="last_menu"><a href="javascript:"></a> <span ng-bind="language.dlang"></span> 
       <ul class="one"> 
        <li><a href="javascript:" ng-click="lang('en')" class="nokoreanlang">English</a></li> 
-       <li><a href="javascript:" ng-click="lang('cn')" class="nokoreanlang">中文</a></li> 
+       <li><a href="javascript:" ng-click="lang('cn')" class="nokoreanlang"></a></li> 
        <div class="arrow_down"></div> 
-      </ul> </li> 
+      </ul> </li>  -->
     </ul> 
    </div> 
    <div class="mobile_btn active"> 
@@ -94,7 +96,25 @@ var _hmt = _hmt || [];
     width: 65%;
     margin-left: 10%;">能源链是基于区块链的去中心化的能源互联网生态系统，其目标在于通过区块链技术，构建一个全球范围内的自由的能源生产、存储，拥有，分享、传输、消耗以及结算的生态系统。</p>
         </div>
-        
+            <div class="box1_select">
+            <div class="nice-select box1_paper" name="nice-select">
+                                      <p><em class="icon icon-globe"></em><input value="中文" readonly="readonly" type="text"><i class="icon icon-caret-down"></i></p>
+
+                                    <ul style="display: none;">
+                    <li data-value="1"><a href="#">中文</a></li>
+                    <li data-value="2"><a href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="nice-select box1_lang" name="nice-select">
+                
+                                    <p><em class="icon icon-book"></em><input value="白皮书" readonly="readonly" type="text"><i class="icon icon-caret-down"></i></p>
+
+                                    <ul style="display: none;">
+                    <li data-value="1"><a target="_blank" href="/pc-ch.pdf">白皮书</a></li>
+                <li data-value="2"><a target="_blank" href="/pc-en.pdf">White Paper</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div id="particles-js" class=""><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;"></canvas></div>
     <div class="bg2 "></div>
