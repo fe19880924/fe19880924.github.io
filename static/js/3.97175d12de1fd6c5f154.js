@@ -671,6 +671,7 @@ webpackJsonp([3, 10], {
                 toChinese: function() {
                     var t = this.$route.path,
                     t = t.substr(0, 4);
+                    window.zzz = this;
                     switch (this.addCookie("lang", "cn"), console.log(document.cookie), t) {
                     case "/":
                         //window.location.href = "https://ont.io/";
