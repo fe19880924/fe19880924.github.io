@@ -107,7 +107,7 @@ $(document).ready(function () {
 			$dotletter.css("background-color","#32a4be")
 			$dotTriones.css("background-color","white")
 		}else{
-			$banner.css("background",'#000 url("../images/index/img_bg.png")no-repeat center')
+			$banner.css("background",'#000 url("/images/index/img_bg.png")no-repeat center')
 			$letter.css("display",'none')
 			$letterbtn.css("display",'none')
 			$letterbtnbtn.css("display",'none')
@@ -120,9 +120,9 @@ $(document).ready(function () {
 		flag = !flag
 	}
 	function cninit(){
-		$view_R_img.css("background","url('./images/index/view_1_cn.jpg') no-repeat center/cover");
-		$view_L_li.eq(0).find('a .img').css("background","url('./images/index/view_2_en.jpg') no-repeat center/cover");
-		$view_L_li.eq(1).find('a .img').css("background","url('./images/index/view_3_en.jpg') no-repeat center/cover");
+		$view_R_img.css("background","url('/images/index/view_1_cn.jpg') no-repeat center/cover");
+		$view_L_li.eq(0).find('a .img').css("background","url('/images/index/view_2_en.jpg') no-repeat center/cover");
+		$view_L_li.eq(1).find('a .img').css("background","url('/images/index/view_3_en.jpg') no-repeat center/cover");
 		$body.css("font-family",'"OpenSans","Microsoft YaHei","sans-serif"')
 		$download.css("font-family",'SourceHanSansCN-ExtraLight')
 		$info_part_item_d.css("line-height",1.3)
@@ -136,9 +136,9 @@ $(document).ready(function () {
 		$koreanlang.css("font-family",'"NanumSquareR","OpenSans","Microsoft YaHei","sans-serif"')
 	}
 	function eninit(){
-        $view_R_img.css("background","url('./images/index/view_1_en.jpg') no-repeat center/cover");
-        $view_L_li.eq(0).find('a .img').css("background","url('./images/index/view_2_en.jpg') no-repeat center/cover");
-		$view_L_li.eq(1).find('a .img').css("background","url('./images/index/view_3_en.jpg') no-repeat center/cover");
+        $view_R_img.css("background","url('/images/index/view_1_en.jpg') no-repeat center/cover");
+        $view_L_li.eq(0).find('a .img').css("background","url('/images/index/view_2_en.jpg') no-repeat center/cover");
+		$view_L_li.eq(1).find('a .img').css("background","url('/images/index/view_3_en.jpg') no-repeat center/cover");
 		$body.css("font-family",'"OpenSans","Microsoft YaHei","sans-serif"')
 		$download.css("font-family",'SourceHanSansCN-ExtraLight')
 		$info_part_item_d.css("line-height",1.3)
@@ -152,9 +152,9 @@ $(document).ready(function () {
 		$koreanlang.css("font-family",'"NanumSquareR","OpenSans","Microsoft YaHei","sans-serif"')
 	}
 	function koinit(){
-        $view_R_img.css("background","url('./images/index/view_1_en.jpg') no-repeat center/cover");
-        $view_L_li.eq(0).find('a .img').css("background","url('./images/index/view_2_en.jpg') no-repeat center/cover");
-        $view_L_li.eq(1).find('a .img').css("background","url('./images/index/view_3_en.jpg') no-repeat center/cover");
+        $view_R_img.css("background","url('/images/index/view_1_en.jpg') no-repeat center/cover");
+        $view_L_li.eq(0).find('a .img').css("background","url('/images/index/view_2_en.jpg') no-repeat center/cover");
+        $view_L_li.eq(1).find('a .img').css("background","url('/images/index/view_3_en.jpg') no-repeat center/cover");
 		$body.css("font-family",'"NanumSquareR","OpenSans","Microsoft YaHei","sans-serif"')
 		$download.css("font-family",'"NanumSquareR","OpenSans","Microsoft YaHei","sans-serif"')
 		$info_part_item_d.css("line-height",1.5)
