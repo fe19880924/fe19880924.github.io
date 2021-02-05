@@ -36,7 +36,7 @@ mysql主节点，已开启binlog日志。
 
 #### mysql-replica
 
-mysql从节点，需要指定主节点。
+mysql从节点，配置主节点。
 
 仓库地址: [https://hub.docker.com/r/fine/mysql-replica](https://hub.docker.com/r/fine/mysql-replica)
 
