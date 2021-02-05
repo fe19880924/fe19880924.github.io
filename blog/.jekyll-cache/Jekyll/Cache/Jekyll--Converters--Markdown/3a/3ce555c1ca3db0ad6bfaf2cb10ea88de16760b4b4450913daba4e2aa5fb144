@@ -1,0 +1,69 @@
+I"o	<p><img src="/images/fine.png" alt="Octocat" /></p>
+
+<p>core + fine = corefine</p>
+
+<p>corefine by <strong>Fe</strong>.</p>
+
+<h1 id="github">github</h1>
+
+<p>地址: <a href="https://github.com/corefine">https://github.com/corefine</a></p>
+
+<h4 id="common">common</h4>
+
+<p>仓库地址: <a href="https://hub.docker.com/r/fine/mysql-master">https://hub.docker.com/r/fine/mysql-master</a></p>
+
+<p>通用组件库: <a href="https://repo1.maven.org/maven2/org/corefine/common/">https://repo1.maven.org/maven2/org/corefine/common/</a></p>
+
+<h4 id="fine-demo">fine-demo</h4>
+
+<p>仓库地址: <a href="https://hub.docker.com/r/fine/mysql-master">https://hub.docker.com/r/fine/mysql-master</a></p>
+
+<p>优秀demo库: <a href="https://repo1.maven.org/maven2/org/corefine/demo/">https://repo1.maven.org/maven2/org/corefine/demo/</a></p>
+
+<h1 id="docker">docker</h1>
+
+<p><img src="/images/docker.png" alt="Octocat" /></p>
+
+<h4 id="mysql-master">mysql-master</h4>
+
+<p>mysql主节点，已开启binlog日志。</p>
+
+<p>仓库地址: <a href="https://hub.docker.com/r/fine/mysql-master">https://hub.docker.com/r/fine/mysql-master</a></p>
+
+<h4 id="mysql-replica">mysql-replica</h4>
+
+<p>mysql从节点，需要指定主节点。</p>
+
+<p>仓库地址: <a href="https://hub.docker.com/r/fine/mysql-replica">https://hub.docker.com/r/fine/mysql-replica</a></p>
+
+<h4 id="centos">centos</h4>
+
+<p>centos已经安装了一些常用组件，并开启了ssh服务。</p>
+
+<p>仓库地址: <a href="https://hub.docker.com/r/fine/centos">https://hub.docker.com/r/fine/centos</a></p>
+
+<h4 id="ubuntu">ubuntu</h4>
+
+<p>ubuntu已经安装了一些常用组件，并开启了ssh服务。</p>
+
+<p>仓库地址: <a href="https://hub.docker.com/r/fine/ubuntu">https://hub.docker.com/r/fine/ubuntu</a></p>
+
+<h4 id="nginx">nginx</h4>
+
+<p>相对于普通的nginx，增加了nginx-upstream-dynamic-servers，并对使用方式进行了规化。</p>
+
+<p>仓库地址: <a href="https://hub.docker.com/r/fine/nginx">https://hub.docker.com/r/fine/nginx</a></p>
+
+<h4 id="nginx-proxy">nginx-proxy</h4>
+
+<p>基于nginx的tcp代理实现，支持docker单机和swarm两种模式。</p>
+
+<p>仓库地址: <a href="https://hub.docker.com/r/fine/nginx-proxy">https://hub.docker.com/r/fine/nginx-proxy</a></p>
+
+<h1 id="about-fe">about Fe</h1>
+
+<p><img src="/images/fe.png" alt="Octocat" /></p>
+
+<p>联系我: <a href="mailto:fe@corefine.org">fe@corefine.org</a></p>
+
+:ET
