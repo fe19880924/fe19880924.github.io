@@ -10,7 +10,8 @@ corefine by **Fe**.
 
 # github & maven
 
-地址: [https://github.com/corefine](https://github.com/corefine)
+github地址: [https://github.com/corefine](https://github.com/corefine)
+maven仓库地址: [https://repo1.maven.org/maven2/org/corefine](https://repo1.maven.org/maven2/org/corefine)
 
 #### common
 
