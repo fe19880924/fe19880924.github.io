@@ -8,7 +8,7 @@ core + fine = corefine
 
 corefine by **Fe**.
 
-# github
+# github & maven
 
 地址: [https://github.com/corefine](https://github.com/corefine)
 
@@ -63,6 +63,9 @@ ubuntu已经安装了一些常用组件，并开启了ssh服务。
 基于nginx的tcp代理实现，支持docker单机和swarm两种模式。
 
 仓库地址: [https://hub.docker.com/r/fine/nginx-proxy](https://hub.docker.com/r/fine/nginx-proxy)
+
+# gitee
+地址：[https://gitee.com/corefine](https://gitee.com/corefine)
 
 # about Fe
 
