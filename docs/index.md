@@ -24,7 +24,7 @@ corefine by **Fe**.
 
 优秀demo库: [https://repo1.maven.org/maven2/org/corefine/demo/](https://repo1.maven.org/maven2/org/corefine/demo/)
 
-# docker
+# docker hub
 
 ![Octocat](/images/docker.png)
 
